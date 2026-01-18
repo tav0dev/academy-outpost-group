@@ -1,3 +1,3 @@
 # outpost-group
 
-Implementação da https://outpostgroup.com.br
+Implementação da https://academy.outpostgroup.com.br
