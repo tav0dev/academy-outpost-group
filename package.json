@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Implementação da https://academy.outpostgroup.com.br",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "dev": "npm run services:up && npm run services:wait:database && npm run migrations:up && next dev",
     "test": "npm run services:up && concurrently --names next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand --verbose\" && npm run services:stop",
