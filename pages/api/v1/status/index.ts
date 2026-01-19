@@ -1,6 +1,7 @@
-import database from "infra/database.js";
+import { NextApiRequest, NextApiResponse } from "next";
+import database from "infra/database";
 
-async function status(request, response) {
+async function status(request: NextApiRequest, response: NextApiResponse) {
   const updatedAt = new Date().toISOString();
 
   const databaseVersionResult = await database.query("SHOW server_version;");
